@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard, inventoryProducts, inventoryCategories, uiAlerts, uiAvatars, uiBadges, uiButtons, uiCards, uiCarousels, uiDropdowns, uiImages, uiLinks } from '@/routes';
+import { dashboard, inventoryProducts, inventoryCategories, uiAlerts, uiAvatars, uiBadges, uiButtons, uiColors, uiCards, uiCarousels, uiDropdowns, uiImages, uiLinks } from '@/routes';
 import { type NavItem } from '@/types';
 import AppLogo from './AppLogo.vue';
 
@@ -58,6 +58,10 @@ const mainNavItems: NavItem[] = [
             {
                 title: 'Buttons',
                 href: uiButtons(),
+            },
+            {
+                title: 'Colors',
+                href: uiColors(),
             },
             {
                 title: 'Cards',

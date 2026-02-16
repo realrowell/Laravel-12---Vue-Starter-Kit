@@ -2,6 +2,7 @@
 import { Head } from '@inertiajs/vue3';
 import { Plus, MoveRight } from 'lucide-vue-next';
 import { Button } from '@/components/ui/button';
+import { ButtonGroup } from '@/components/ui/button-group'
 import AppLayout from '@/layouts/AppLayout.vue';
 import { dashboard } from '@/routes';
 import { type BreadcrumbItem } from '@/types';
@@ -125,6 +126,26 @@ const breadcrumbs: BreadcrumbItem[] = [
                         </div>
                         Large Size
                     </div>
+                </div>
+            </div>
+            <div
+                class="relative rounded-xl border border-sidebar-border/70 md:min-h-min dark:border-sidebar-border flex flex-col gap-5 p-5"
+            >
+                <h3 class="text-lg">Button Group</h3>
+                <div class="flex flex-row gap-5">
+                    <ButtonGroup>
+                        <ButtonGroup>
+                            <Button variant="outline">
+                                Archive
+                            </Button>
+                            <Button variant="outline">
+                                Report
+                            </Button>
+                            <Button variant="outline">
+                                Report
+                            </Button>
+                        </ButtonGroup>
+                    </ButtonGroup>
                 </div>
             </div>
         </div>
