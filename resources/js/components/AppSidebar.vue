@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
-import { BookOpen, Folder, LayoutGrid, Package } from 'lucide-vue-next';
+import { BookOpen, Folder, LayoutGrid, Package, SquareDashedMousePointer } from 'lucide-vue-next';
 import NavFooter from '@/components/NavFooter.vue';
 import NavMain from '@/components/NavMain.vue';
 import NavUser from '@/components/NavUser.vue';
@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { dashboard, inventoryProducts, inventoryCategories } from '@/routes';
+import { dashboard, inventoryProducts, inventoryCategories, uiAlerts, uiAvatars, uiBadges, uiButtons, uiCards, uiCarousels, uiDropdowns, uiImages, uiLinks } from '@/routes';
 import { type NavItem } from '@/types';
 import AppLogo from './AppLogo.vue';
 
@@ -32,21 +32,76 @@ const mainNavItems: NavItem[] = [
                 title: 'Products',
                 href: inventoryProducts(),
             },
-            // {
-            //     title: 'Brands',
-            //     href: inventory(),
-            // },
             {
                 title: 'Categories',
                 href: inventoryCategories(),
             },
+        ],
+    },
+    {
+        title: 'UI Elements',
+        // href: inventory(),
+        icon: SquareDashedMousePointer,
+        children: [
+            {
+                title: 'Alerts',
+                href: uiAlerts(),
+            },
+            {
+                title: 'Avatars',
+                href: uiAvatars(),
+            },
+            {
+                title: 'Badge',
+                href: uiBadges(),
+            },
+            {
+                title: 'Buttons',
+                href: uiButtons(),
+            },
+            {
+                title: 'Cards',
+                href: uiCards(),
+            },
+            {
+                title: 'Carousel',
+                href: uiCarousels(),
+            },
+            {
+                title: 'Dropdowns',
+                href: uiDropdowns(),
+            },
+            {
+                title: 'Images',
+                href: uiImages(),
+            },
+            {
+                title: 'Links',
+                href: uiLinks(),
+            },
             // {
-            //     title: 'Locations',
-            //     href: inventory(),
+            //     title: 'List',
+            //     href: inventoryCategories(),
             // },
             // {
-            //     title: 'Inventory Logs',
-            //     href: inventory(),
+            //     title: 'Modals',
+            //     href: inventoryCategories(),
+            // },
+            // {
+            //     title: 'Ribbons',
+            //     href: inventoryCategories(),
+            // },
+            // {
+            //     title: 'Spinners',
+            //     href: inventoryCategories(),
+            // },
+            // {
+            //     title: 'Tabs',
+            //     href: inventoryCategories(),
+            // },
+            // {
+            //     title: 'Tooltips',
+            //     href: inventoryCategories(),
             // },
         ],
     },

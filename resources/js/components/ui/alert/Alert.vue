@@ -7,14 +7,19 @@ import { alertVariants } from "."
 const props = defineProps<{
   class?: HTMLAttributes["class"]
   variant?: AlertVariants["variant"]
+  iconSize?: AlertVariants["iconSize"]
 }>()
 </script>
 
 <template>
   <div
-    data-slot="alert"
-    :class="cn(alertVariants({ variant }), props.class)"
-    role="alert"
+    :class="cn(
+      alertVariants({
+        variant: props.variant,
+        iconSize: props.iconSize,
+      }),
+      props.class
+    )"
   >
     <slot />
   </div>
