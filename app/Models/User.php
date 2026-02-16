@@ -71,7 +71,7 @@ class User extends Authenticatable
     {
         parent::boot();
         self::creating(function ($model) {
-            $prefix = 'usr'.date(format: 'ym');
+            $prefix = 'usr' . date(format: 'ym');
             $model->id = IdGenerator::generate(['table' => 'users', 'length' => 20, 'prefix' => $prefix . str()->random(10)]);
         });
         static::creating(function ($model) {
@@ -81,13 +81,15 @@ class User extends Authenticatable
         });
     }
 
-    public static function roleOptions(){
+    public static function roleOptions()
+    {
         return [
             self::ROLE_ADMIN => 'Admin',
             self::ROLE_USER => 'User',
         ];
     }
-    public static function statusOptions(){
+    public static function statusOptions()
+    {
         return [
             self::STATUS_ACTIVE => 'Active',
             self::STATUS_INACTIVE => 'Inactive',
