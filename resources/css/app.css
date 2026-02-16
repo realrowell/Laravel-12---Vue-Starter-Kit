@@ -125,7 +125,7 @@
     --sidebar-ring: hsl(217.2 91.2% 59.8%);
     --sidebar: hsl(0 0% 98%);
     --app-primary-color: #008CFF;
-    --app-subtle-primary-color: #DEECFF;
+    --app-subtle-primary-color: #DEF2FF;
     --app-dark-primary-color: #0169BE;
     --app-danger-color: #FC3232;
     --app-subtle-danger-color: #FFD8DD;
@@ -136,9 +136,9 @@
     --app-warning-color: #FF8800;
     --app-subtle-warning-color: #FFE9AE;
     --app-dark-warning-color: #D65600;
-    --app-info-color: #00B7D4;
-    --app-subtle-info-color: #B3F8FE;
-    --app-dark-info-color: #008992;
+    --app-info-color: #00C2FF;
+    --app-subtle-info-color: #D6F7FF;
+    --app-dark-info-color: #068FB9;
     --app-secondary-color: #F3F3F3;
     --app-subtle-secondary-color: #5B5B5B;
     --app-dark-secondary-color: #D6D6D6;
