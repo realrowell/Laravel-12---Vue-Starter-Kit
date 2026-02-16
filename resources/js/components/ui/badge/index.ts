@@ -9,13 +9,23 @@ export const badgeVariants = cva(
     variants: {
       variant: {
         default:
-          "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
+          "border-transparent bg-(--app-primary-color) text-white [a&]:hover:bg-primary/90",
         secondary:
-          "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
+          "border-transparent bg-(--app-secondary-color) text-black [a&]:hover:bg-secondary/90",
         destructive:
          "border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
+        success: "border-transparent bg-(--app-success-color) text-white",
+        danger: "border-transparent bg-(--app-danger-color) text-white",
+        warning: "border-transparent bg-(--app-warning-color) text-white",
+        info: "border-transparent bg-(--app-info-color) text-white",
+        subtlePrimary: "border-(--app-primary-color) bg-(--app-subtle-primary-color) text-(--app-primary-color)",
+        subtleSuccess: "border-(--app-success-color) bg-(--app-subtle-success-color) text-(--app-success-color)",
+        subtleDanger: "border-(--app-danger-color) bg-(--app-subtle-danger-color) text-(--app-danger-color)",
+        subtleWarning: "border-(--app-warning-color) bg-(--app-subtle-warning-color) text-(--app-warning-color)",
+        subtleInfo: "border-(--app-info-color) bg-(--app-subtle-info-color) text-(--app-info-color)",
+        subtleSecondary: "border-(--app-secondary-color) bg-(--app-subtle-secondary-color) text-(--app-secondary-color)",
       },
     },
     defaultVariants: {
