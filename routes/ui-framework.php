@@ -17,6 +17,9 @@ Route::prefix('ui-elements')->middleware('auth')->controller(UiElementsPageContr
     Route::get('buttons', function () {
         return Inertia::render('ui-elements/Buttons');
     })->name('buttons');
+    Route::get('colors', function () {
+        return Inertia::render('ui-elements/Colors');
+    })->name('colors');
     Route::get('cards', function () {
         return Inertia::render('ui-elements/Cards');
     })->name('cards');
